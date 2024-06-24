@@ -1,0 +1,123 @@
+PODS:
+  - AAILiveness (2.0.8):
+    - AAINetwork
+  - AAINetwork (1.0.2)
+  - Alamofire (5.7.1)
+  - AppsFlyerFramework (6.12.3):
+    - AppsFlyerFramework/Main (= 6.12.3)
+  - AppsFlyerFramework/Main (6.12.3)
+  - BRPickerView (2.8.1):
+    - BRPickerView/AddressPickerView (= 2.8.1)
+    - BRPickerView/Base (= 2.8.1)
+    - BRPickerView/DatePickerView (= 2.8.1)
+    - BRPickerView/StringPickerView (= 2.8.1)
+  - BRPickerView/AddressPickerView (2.8.1):
+    - BRPickerView/Base
+  - BRPickerView/Base (2.8.1)
+  - BRPickerView/DatePickerView (2.8.1):
+    - BRPickerView/Base
+  - BRPickerView/StringPickerView (2.8.1):
+    - BRPickerView/Base
+  - DeviceKit (5.2.2)
+  - HandyJSON (5.0.2)
+  - IQKeyboardManagerSwift (6.5.16)
+  - Kingfisher (7.11.0)
+  - lottie-ios (4.3.4)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.7.6)
+  - ReachabilitySwift (5.0.0)
+  - RxSwift (6.6.0)
+  - SAMKeychain (1.5.3)
+  - SnapKit (5.6.0)
+  - SystemServices (2.0.1)
+  - TYAlertController (1.2.0)
+  - TYCyclePagerView (1.2.0)
+  - "UIColor+Hex (1.0.1)":
+    - "UIColor+Hex/NSColor (= 1.0.1)"
+    - "UIColor+Hex/UIColor (= 1.0.1)"
+  - "UIColor+Hex/UIColor (1.0.1)"
+
+DEPENDENCIES:
+  - "AAILiveness (from `{:http=>\"https://prod-guardian-cv.oss-ap-southeast-5.aliyuncs.com/sdk/iOS-liveness-detection/2.0.8/iOS-Liveness-SDK-V2.0.8.tar.bz2\", :type=>:tbz}`)"
+  - "AAINetwork (from `{:http=>\"https://prod-guardian-cv.oss-ap-southeast-5.aliyuncs.com/sdk/iOS-libraries/AAINetwork/AAINetwork-V1.0.2.tar.bz2\", :type=>:tbz}`)"
+  - Alamofire (~> 5.7.1)
+  - AppsFlyerFramework (~> 6.12.3)
+  - BRPickerView (~> 2.8.1)
+  - DeviceKit (~> 5.2.2)
+  - HandyJSON (~> 5.0.2)
+  - IQKeyboardManagerSwift (~> 6.5.16)
+  - Kingfisher (~> 7.11.0)
+  - lottie-ios (~> 4.3.1)
+  - MBProgressHUD (~> 1.2.0)
+  - MJRefresh (~> 3.7.6)
+  - ReachabilitySwift (~> 5.0.0)
+  - RxSwift (~> 6.6.0)
+  - SAMKeychain (~> 1.5.3)
+  - SnapKit (~> 5.6.0)
+  - SystemServices (~> 2.0.1)
+  - TYAlertController (~> 1.2.0)
+  - TYCyclePagerView (~> 1.2.0)
+  - "UIColor+Hex (~> 1.0.1)"
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AppsFlyerFramework
+    - BRPickerView
+    - DeviceKit
+    - HandyJSON
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - lottie-ios
+    - MBProgressHUD
+    - MJRefresh
+    - ReachabilitySwift
+    - RxSwift
+    - SAMKeychain
+    - SnapKit
+    - SystemServices
+    - TYAlertController
+    - TYCyclePagerView
+    - "UIColor+Hex"
+
+EXTERNAL SOURCES:
+  AAILiveness:
+    :http: https://prod-guardian-cv.oss-ap-southeast-5.aliyuncs.com/sdk/iOS-liveness-detection/2.0.8/iOS-Liveness-SDK-V2.0.8.tar.bz2
+    :type: :tbz
+  AAINetwork:
+    :http: https://prod-guardian-cv.oss-ap-southeast-5.aliyuncs.com/sdk/iOS-libraries/AAINetwork/AAINetwork-V1.0.2.tar.bz2
+    :type: :tbz
+
+CHECKOUT OPTIONS:
+  AAILiveness:
+    :http: https://prod-guardian-cv.oss-ap-southeast-5.aliyuncs.com/sdk/iOS-liveness-detection/2.0.8/iOS-Liveness-SDK-V2.0.8.tar.bz2
+    :type: :tbz
+  AAINetwork:
+    :http: https://prod-guardian-cv.oss-ap-southeast-5.aliyuncs.com/sdk/iOS-libraries/AAINetwork/AAINetwork-V1.0.2.tar.bz2
+    :type: :tbz
+
+SPEC CHECKSUMS:
+  AAILiveness: 5ab3a59d6cc70f8da3dbe314aec272adb5a6bf68
+  AAINetwork: 02c3979092230f269eeaeaa273bbaae209a6b3ac
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  AppsFlyerFramework: fdc5c2fa3a3cfcd62eae58dfba4b8f59c6c77219
+  BRPickerView: 2531a2d4d0fea0b57a1c738de215af0f88863a2f
+  DeviceKit: e36aaf2a0d142ef0b4fac2007649a4414af234be
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
+  Kingfisher: b9c985d864d43515f404f1ef4a8ce7d802ace3ac
+  lottie-ios: 3d98679b41fa6fd6aff2352b3953dbd3df8a397e
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 2fe7fb43a5167ceda20bb7e63f130c04fd1814a5
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SystemServices: 7af348493ece8951449b476c41532df72569b181
+  TYAlertController: c121090edb0bea7426f987da94cdddd81eef4231
+  TYCyclePagerView: 2b051dade0615c70784aa34f40c646feeddb7344
+  "UIColor+Hex": 9fee91bb8e19f17dd40a79ae1e98949a6a84489d
+
+PODFILE CHECKSUM: 384731f916b73be8bc12bebf583cf2a37d942092
+
+COCOAPODS: 1.14.3
