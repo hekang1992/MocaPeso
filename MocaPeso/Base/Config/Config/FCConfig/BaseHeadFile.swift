@@ -20,9 +20,9 @@ let STATUSBAR_HIGH = Bool.isFullScreenDevice(Device.current) ? 44 : 20
 // 导航栏高度
 let NAV_HIGH = 44 + STATUSBAR_HIGH;
 
-let Key_Service = "Key_Service"
+let Key_Service = "fcKey_Service"
 
-let Key_Account = "Key_Account"
+let Key_Account = "fcKey_Account"
 
 //push
 let FCNotificationCenter = NotificationCenter.default
@@ -41,6 +41,8 @@ let Fredoka_Medium = "Fredoka-Medium"
 //login
 let PHONE_LOGIN = "PHONE_LOGIN"
 let PHONE_SESSIONID = "PHONE_SESSIONID"
+
+let IS_FIRST = "IS_FIRST"
 
 var IS_LOGIN: Bool {
     if let cssID = UserDefaults.standard.object(forKey: PHONE_SESSIONID) as? String {

@@ -1,2 +1,1 @@
-# TalaPeso
 # MocaPeso
