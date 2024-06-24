@@ -18,7 +18,7 @@ class FCFakePopView: UIView {
     
     lazy var bgimageView: UIImageView = {
         let bgimageView = UIImageView()
-        bgimageView.image = UIImage(named: "Sliceyello")
+        bgimageView.image = UIImage(named: "yellowbgimage")
         return bgimageView
     }()
     
@@ -91,12 +91,12 @@ class FCFakePopView: UIView {
         bgimageView.snp.makeConstraints { make in
             make.centerX.equalTo(self)
             make.top.equalTo(btn.snp.bottom).offset(6.px())
-            make.size.equalTo(CGSizeMake(320.px(), 357.px()))
+            make.size.equalTo(CGSizeMake(320.px(), 439.px()))
         }
         idImageView.snp.makeConstraints { make in
             make.centerX.equalTo(bgimageView)
             make.top.equalTo(bgimageView)
-            make.size.equalTo(CGSizeMake(244.px(), 25.px()))
+            make.size.equalTo(CGSizeMake(140.px(), 100.px()))
         }
         iconImageView.snp.makeConstraints { make in
             make.size.equalTo(CGSizeMake(19.5.px(), 45.5.px()))
@@ -106,7 +106,7 @@ class FCFakePopView: UIView {
         label1.snp.makeConstraints { make in
             make.centerX.equalTo(bgimageView)
             make.size.equalTo(CGSizeMake(300.px(), 22.px()))
-            make.top.equalTo(idImageView.snp.bottom).offset(25.px())
+            make.top.equalTo(idImageView.snp.bottom)
         }
         label2.snp.makeConstraints { make in
             make.centerX.equalTo(bgimageView)

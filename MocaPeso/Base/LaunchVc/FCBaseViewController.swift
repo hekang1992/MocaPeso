@@ -299,38 +299,24 @@ extension FCBaseViewController: UINavigationControllerDelegate {
         let alertVC = TYAlertController(alert: sureFakeView, preferredStyle: .actionSheet)
         switch type {
         case "ua":
-            sureFakeView.idImageView.image = UIImage(named: "Slicephpo")
+            sureFakeView.idImageView.image = UIImage(named: "liuchen1")
             sureFakeView.label1.text = "Next Step"
             sureFakeView.label2.text = "ID Card Or Face"
             sureFakeView.label3.text = "1. To proceed, please complete the verification process. This step is crucial to prevent fraud and ensure the security of your funds during transactions.\n2. We prioritize the security of your personal information and will strictly safeguard your privacy.\n3. Thank you for your understanding and cooperation. If you have any questions or need assistance, feel free to contact our customer service team at any time."
             break
             
         case "ea":
-            sureFakeView.idImageView.image = UIImage(named: "")
+            sureFakeView.idImageView.image = UIImage(named: "liuchen2")
             sureFakeView.label1.text = "Next Step"
             sureFakeView.label2.text = "Personal Information"
             sureFakeView.label3.text = "1. Gender: Used for personalized marketing and product customization.\n2. Education: Reflects qualifications and income for credit assessment.\n3. Email: Enables communication and notifications.\n4. Home Address: Confirms residence and provides contact details.\nCollecting this information helps assess credit risk and ensure secure loan processing, while complying with privacy regulations."
             break
-            
-        case "ef":
-            sureFakeView.idImageView.image = UIImage(named: "")
-            sureFakeView.label1.text = "Next Step"
-            sureFakeView.label2.text = "Work Information"
-            sureFakeView.label3.text = ""
-            break
-            
-        case "ee":
-            sureFakeView.idImageView.image = UIImage(named: "")
-            sureFakeView.label1.text = "Next Step"
-            sureFakeView.label2.text = "Contact Information"
-            sureFakeView.label3.text = ""
-            break
 
         case "ww":
-            sureFakeView.idImageView.image = UIImage(named: "")
+            sureFakeView.idImageView.image = UIImage(named: "liuchen3")
             sureFakeView.label1.text = "Next Step"
             sureFakeView.label2.text = "Bank Information"
-            sureFakeView.label3.text = "1. Collecting users' bank card information is to deposit the loan funds directly into their bank accounts to complete the loan disbursement process.\n2. Loan institutions ensure strict security measures and privacy protections to safeguard the confidentiality and security of users' bank card information."
+            sureFakeView.label3.text = "1. Collecting users' bank card information is to deposit the loan funds directly into their bank accounts to complete the loan disbursement process.\n2. Loan institutions enforce strict security measures and privacy protections to safeguard users' bank card information.\n3. Using advanced encryption technologies to secure sensitive bank card information during transmission and storage, ensuring it remains unreadable to unauthorized parties."
             break
             
         default: 
@@ -432,7 +418,7 @@ extension FCBaseViewController: UINavigationControllerDelegate {
     func confirmPopView(_ url: String, _ productID: String, _ startTime: String, _ type: String) {
         let alertVC = TYAlertController(alert: sureFakeView, preferredStyle: .actionSheet)
         sureFakeView.btn.isHidden = true
-        sureFakeView.idImageView.image = UIImage(named: "")
+        sureFakeView.idImageView.image = UIImage(named: "liuchen4")
         sureFakeView.label1.text = "Verification Completed"
         sureFakeView.label2.text = "Done!"
         sureFakeView.label3.text = "1. Your verification process is complete. Thank you for your patience. Please click 'Confirm' to confirm your loan details.\n2. Processing your application may take some time. We will handle it promptly to ensure you receive your funds as soon as possible.\n3. The review results will be sent via SMS and email. Please check your messages. For any questions, contact our customer service team. Thank you for your support."
