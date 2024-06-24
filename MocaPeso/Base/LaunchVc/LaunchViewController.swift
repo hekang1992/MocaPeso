@@ -185,15 +185,19 @@ extension LaunchViewController {
         icon3.frame = CGRectMake(SCREEN_WIDTH * 2, 0, SCREEN_WIDTH, SCREEN_HEIGHT)
         confirmBtn.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.bottom.equalToSuperview().offset(-80.px())
-            make.size.equalTo(CGSize(width: 300.px(), height: 200.px()))
+            make.bottom.equalToSuperview().offset(-10.px())
+            make.size.equalTo(CGSize(width: 300.px(), height: 250.px()))
         }
     }
     
     @objc func btnClick() {
-        UserDefaults.standard.set("1", forKey: IS_FIRST)
-        UserDefaults.standard.synchronize()
-        netWork()
+        let priVc = PrivacyViewController()
+        priVc.block = { [weak self] in
+            UserDefaults.standard.set("1", forKey: IS_FIRST)
+            UserDefaults.standard.synchronize()
+            self?.netWork()
+        }
+        self.navigationController?.pushViewController(priVc, animated: true)
     }
-    
 }
+

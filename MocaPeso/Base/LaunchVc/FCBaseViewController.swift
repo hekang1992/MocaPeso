@@ -176,7 +176,6 @@ extension FCBaseViewController: UINavigationControllerDelegate {
         let fileURL = urls[0].appendingPathComponent(fileName)
         do {
             try data.write(to: fileURL, options: .atomic)
-//            print("Saved data to \(fileURL.absoluteString)")
         } catch {
             print("Failed to write JSON data to local file: \(error.localizedDescription)")
         }
@@ -301,7 +300,7 @@ extension FCBaseViewController: UINavigationControllerDelegate {
         case "ua":
             sureFakeView.idImageView.image = UIImage(named: "liuchen1")
             sureFakeView.label1.text = "Next Step"
-            sureFakeView.label2.text = "ID Card Or Face"
+            sureFakeView.label2.text = "Identity and Facial Information"
             sureFakeView.label3.text = "1. To proceed, please complete the verification process. This step is crucial to prevent fraud and ensure the security of your funds during transactions.\n2. We prioritize the security of your personal information and will strictly safeguard your privacy.\n3. Thank you for your understanding and cooperation. If you have any questions or need assistance, feel free to contact our customer service team at any time."
             break
             

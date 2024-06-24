@@ -51,6 +51,8 @@
 		1860B2162BF1F6B700BB8DCC /* FCWalletImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860B2152BF1F6B700BB8DCC /* FCWalletImageCell.swift */; };
 		186210942BCF76A500A74058 /* RightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186210932BCF76A500A74058 /* RightView.swift */; };
 		186210982BCFC1C000A74058 /* RightViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186210972BCFC1C000A74058 /* RightViewCell.swift */; };
+		186B086C2C298B9000DCCC04 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B086B2C298B9000DCCC04 /* PrivacyViewController.swift */; };
+		186B086E2C299CDC00DCCC04 /* YouKeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186B086D2C299CDC00DCCC04 /* YouKeView.swift */; };
 		18868C082BF4B8C90087FDCA /* FCOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18868C072BF4B8C90087FDCA /* FCOrderView.swift */; };
 		18868C0A2BF4C1990087FDCA /* FCOrderCommonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18868C092BF4C1990087FDCA /* FCOrderCommonCell.swift */; };
 		18868C0C2BF4C1AE0087FDCA /* FCOrderSpecialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18868C0B2BF4C1AE0087FDCA /* FCOrderSpecialCell.swift */; };
@@ -170,6 +172,8 @@
 		1860B2152BF1F6B700BB8DCC /* FCWalletImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCWalletImageCell.swift; sourceTree = "<group>"; };
 		186210932BCF76A500A74058 /* RightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightView.swift; sourceTree = "<group>"; };
 		186210972BCFC1C000A74058 /* RightViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightViewCell.swift; sourceTree = "<group>"; };
+		186B086B2C298B9000DCCC04 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
+		186B086D2C299CDC00DCCC04 /* YouKeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouKeView.swift; sourceTree = "<group>"; };
 		18868C072BF4B8C90087FDCA /* FCOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCOrderView.swift; sourceTree = "<group>"; };
 		18868C092BF4C1990087FDCA /* FCOrderCommonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCOrderCommonCell.swift; sourceTree = "<group>"; };
 		18868C0B2BF4C1AE0087FDCA /* FCOrderSpecialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCOrderSpecialCell.swift; sourceTree = "<group>"; };
@@ -377,6 +381,7 @@
 			isa = PBXGroup;
 			children = (
 				18562E5C2BB12B1000F1FA23 /* LaunchViewController.swift */,
+				186B086B2C298B9000DCCC04 /* PrivacyViewController.swift */,
 				18562E5A2BB12AC800F1FA23 /* FCBaseViewController.swift */,
 				184D87312BB2A15200773F45 /* BaseNavViewController.swift */,
 			);
@@ -581,6 +586,7 @@
 				18868C112BF6145E0087FDCA /* FCProductCommonCell.swift */,
 				18C0371A2C2290B200AB4B71 /* SecPopView.swift */,
 				18FC63D42C295F260004D5B4 /* FCFakePopView.swift */,
+				186B086D2C299CDC00DCCC04 /* YouKeView.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -877,6 +883,7 @@
 			files = (
 				18E15D192BF362650028B293 /* RightThreeView.swift in Sources */,
 				18A9DC312BD2237000E34D15 /* FFShadowLabel.swift in Sources */,
+				186B086E2C299CDC00DCCC04 /* YouKeView.swift in Sources */,
 				1859507D2BDB8C5500BD57CD /* CardTypeView.swift in Sources */,
 				18A7F8782BEB5E0100B33F2D /* FCPersonalView.swift in Sources */,
 				185950772BDB77AE00BD57CD /* OverlapFlowLayout.swift in Sources */,
@@ -916,6 +923,7 @@
 				18562E752BB1481100F1FA23 /* HomeViewController.swift in Sources */,
 				18A7F87E2BEB76D000B33F2D /* FCWenBenCell.swift in Sources */,
 				188E9F8D2BFB24460048AF28 /* RightTypeSView.swift in Sources */,
+				186B086C2C298B9000DCCC04 /* PrivacyViewController.swift in Sources */,
 				18A7F8752BEB5C7500B33F2D /* FCBankInfoViewController.swift in Sources */,
 				18F7EE202BF30CC30026E1FB /* FCHomeOneView.swift in Sources */,
 				18591A302BFDD4C200B8211C /* FCPullHeader.swift in Sources */,
