@@ -8,6 +8,7 @@
 import UIKit
 import UIColor_Hex
 import MBProgressHUD
+import DeviceKit
 
 typealias LoginCanBlock = () -> Void
 class LoginView: UIView {
@@ -172,7 +173,11 @@ class LoginView: UIView {
         }
         bgImageView.snp.makeConstraints { make in
             make.left.equalTo(bgView).offset(SCREEN_WIDTH)
-            make.bottom.equalTo(bgView).offset(-140.px())
+            if Device.current.isPad {
+                make.top.equalTo(bgView).offset(110.px())
+            }else {
+                make.top.equalTo(bgView).offset(140.px())
+            }
             make.size.equalTo(CGSizeMake(338.px(), 389.px()))
         }
         btn.snp.makeConstraints { make in

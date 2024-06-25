@@ -154,9 +154,9 @@ extension AppDelegate: AppsFlyerLibDelegate, UNUserNotificationCenterDelegate {
     }
     
     func keyboardManager(){
-        IQKeyboardManager.shared.keyboardDistanceFromTextField = 20.px()
-        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
         IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        IQKeyboardManager.shared.keyboardDistanceFromTextField = 20.px()
     }
     
     func getRootVc() {

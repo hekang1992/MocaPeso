@@ -64,7 +64,7 @@ class SecPopView: UIView {
         scrollView.addSubview(secbtn)
         iconImageView.snp.makeConstraints { make in
             if Device.current.isPad {
-                make.top.equalToSuperview().offset(61.px())
+                make.top.equalToSuperview().offset(51.px())
             }else {
                 make.top.equalToSuperview().offset(141.px())
             }
