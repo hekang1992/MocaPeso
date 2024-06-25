@@ -60,15 +60,23 @@ class YouKeView: UIView {
     
     lazy var btn2: UIButton = {
         let btn2 = UIButton(type: .custom)
-        btn2.setImage(UIImage(named: "fpnfitbtn"), for: .normal)
+        btn2.titleLabel?.font = UIFont(name: Fredoka_Bold, size: 20.px())
+        btn2.setTitle("Visitor status access", for: .normal)
+        btn2.setTitleColor(UIColor.init(css: "#8A8DA5"), for: .normal)
         btn2.addTarget(self, action: #selector(btnClick2), for: .touchUpInside)
+        btn2.backgroundColor = UIColor.init(css: "#384067")
+        btn2.layer.cornerRadius = 7.px()
         return btn2
     }()
     
     lazy var btn3: UIButton = {
         let btn3 = UIButton(type: .custom)
-        btn3.setImage(UIImage(named: "fpnfitbtn"), for: .normal)
+        btn3.titleLabel?.font = UIFont(name: Fredoka_Bold, size: 20.px())
+        btn3.setTitle("Login", for: .normal)
+        btn3.setTitleColor(UIColor.init(css: "#FFFFFF"), for: .normal)
         btn3.addTarget(self, action: #selector(btnClick3), for: .touchUpInside)
+        btn3.backgroundColor = UIColor.init(css: "#384067")
+        btn3.layer.cornerRadius = 7.px()
         return btn3
     }()
     
@@ -119,12 +127,12 @@ class YouKeView: UIView {
         btn2.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(label1.snp.bottom).offset(20.px())
-            make.size.equalTo(CGSizeMake(183.px(), 86.px()))
+            make.size.equalTo(CGSizeMake(235.px(), 60.px()))
         }
         btn3.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
-            make.top.equalTo(btn2.snp.bottom).offset(5.px())
-            make.size.equalTo(CGSizeMake(183.px(), 86.px()))
+            make.top.equalTo(btn2.snp.bottom).offset(20.px())
+            make.size.equalTo(CGSizeMake(235.px(), 60.px()))
         }
     }
     

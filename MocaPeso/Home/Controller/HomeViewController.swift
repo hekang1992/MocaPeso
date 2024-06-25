@@ -81,6 +81,10 @@ class HomeViewController: FCBaseViewController {
             self?.applyClick(model.particularly ?? "")
         }
         self.twoView.tableView.mj_header = FCPullHeader(refreshingTarget: self, refreshingAction: #selector(loadHomeData))
+        let is_two: String = UserDefaults.standard.object(forKey: IS_TWO) as? String ?? ""
+        if is_two != "1" && !IS_LOGIN   {
+            addLoginView()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

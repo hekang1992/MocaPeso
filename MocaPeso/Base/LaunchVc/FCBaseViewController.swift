@@ -62,9 +62,12 @@ class FCBaseViewController: UIViewController {
     }
     
     func addLoginView() {
-        view.addSubview(loginView)
+        if let window = UIApplication.shared.keyWindow {
+            window.addSubview(loginView)
+        }
+//        view.addSubview(loginView)
         loginView.snp.makeConstraints { make in
-            make.edges.equalTo(self.view)
+            make.edges.equalToSuperview()
         }
         loginView.block1 = { [weak self] in
             self?.hideLoginView()

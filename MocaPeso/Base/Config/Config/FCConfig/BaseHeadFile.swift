@@ -44,6 +44,10 @@ let PHONE_SESSIONID = "PHONE_SESSIONID"
 
 let IS_FIRST = "IS_FIRST"
 
+let IS_TWO = "IS_TWO"
+
+
+
 var IS_LOGIN: Bool {
     if let cssID = UserDefaults.standard.object(forKey: PHONE_SESSIONID) as? String {
         return !cssID.isEmpty

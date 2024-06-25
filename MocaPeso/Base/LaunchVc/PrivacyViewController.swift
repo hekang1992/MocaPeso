@@ -68,7 +68,7 @@ class PrivacyViewController: FCBaseViewController {
         super.viewDidLoad()
         let height = UIViewController.getTopBarHeights(for: self)
         // Do any additional setup after loading the view.
-        self.navView.isHidden = false
+        self.navView.isHidden = true
         self.navView.block = { [weak self] in
             self?.navigationController?.popViewController(animated: true)
         }
@@ -132,11 +132,15 @@ class PrivacyViewController: FCBaseViewController {
         }
         youkeView.block2 = { [weak self] in
             self?.dismiss(animated: true, completion: {
-                self?.addLoginView()
+                self?.block?()
+                UserDefaults.standard.set("1", forKey: IS_TWO)
+                UserDefaults.standard.synchronize()
             })
         }
-        youkeView.block3 = {
-            self.block?()
+        youkeView.block3 = { [weak self] in
+            self?.dismiss(animated: true, completion: {
+                self?.block?()
+            })
         }
     }
     
