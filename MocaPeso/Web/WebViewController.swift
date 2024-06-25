@@ -264,7 +264,7 @@ extension WebViewController: WKNavigationDelegate, WKScriptMessageHandler {
         let subject = arguments[1]
         let orderID = arguments.last ?? ""
         let mobileStr = UserDefaults.standard.object(forKey: PHONE_LOGIN)
-        var strBody = "Tawid Loan Account: \(mobileStr ?? "")"
+        var strBody = "Moca Peso Account: \(mobileStr ?? "")"
         if !orderID.isEmpty {
             strBody += ", orderId: \(orderID)"
         }

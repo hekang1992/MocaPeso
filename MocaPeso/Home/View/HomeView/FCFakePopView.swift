@@ -85,7 +85,7 @@ class FCFakePopView: UIView {
             if Device.current.isPad {
                 make.top.equalToSuperview().offset(61.px())
             }else {
-                make.top.equalToSuperview().offset(141.px())
+                make.top.equalToSuperview().offset(121.px())
             }
         }
         bgimageView.snp.makeConstraints { make in

@@ -372,26 +372,32 @@ extension FCBaseViewController: UINavigationControllerDelegate {
     }
     
     func getIDType(_ productID: String) {
-        let dict = ["relations": productID, "hitch": "1"]
-        FCRequset.shared.requestAPI(params: dict, pageUrl: persuadedThere, method: .get) { [weak self] baseModel in
-            let conceive = baseModel.conceive
-            if conceive == 0 || conceive == 00 {
-                let model = JSONDeserializer<IDCradModel>.deserializeFrom(dict: baseModel.easily)
-                if let model = model {
-                    let shouldBeHidden = model.waved?.weren?.isEmpty ?? true
-                    if !shouldBeHidden {
-                        let photoVc = FCPhotoViewController()
-                        photoVc.particularly = productID
-                        self?.navigationController?.pushViewController(photoVc, animated: true)
-                    }else {
-                        let cardVc = FCCardTypeViewController()
-                        cardVc.particularly = productID
-                        self?.navigationController?.pushViewController(cardVc, animated: true)
+        if productID == "2" {
+            let cardVc = FCCardTypeViewController()
+            cardVc.particularly = productID
+            self.navigationController?.pushViewController(cardVc, animated: true)
+        }else {
+            let dict = ["relations": productID, "hitch": "1"]
+            FCRequset.shared.requestAPI(params: dict, pageUrl: persuadedThere, method: .get) { [weak self] baseModel in
+                let conceive = baseModel.conceive
+                if conceive == 0 || conceive == 00 {
+                    let model = JSONDeserializer<IDCradModel>.deserializeFrom(dict: baseModel.easily)
+                    if let model = model {
+                        let shouldBeHidden = model.waved?.weren?.isEmpty ?? true
+                        if !shouldBeHidden {
+                            let photoVc = FCPhotoViewController()
+                            photoVc.particularly = productID
+                            self?.navigationController?.pushViewController(photoVc, animated: true)
+                        }else {
+                            let cardVc = FCCardTypeViewController()
+                            cardVc.particularly = productID
+                            self?.navigationController?.pushViewController(cardVc, animated: true)
+                        }
                     }
                 }
+            } errorBlock: { error in
+                
             }
-        } errorBlock: { error in
-            
         }
     }
     

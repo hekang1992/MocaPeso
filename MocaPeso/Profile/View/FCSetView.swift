@@ -75,7 +75,7 @@ class FCSetView: UIView {
     
     lazy var titleLable2: UILabel = {
         let titleLable2 = UILabel.createLabel(font: UIFont(name: Fredoka_Bold, size: 16.px())!, textColor: .white, textAlignment: .center)
-        titleLable2.text = "Tawid Loan"
+        titleLable2.text = "Moca Peso"
         return titleLable2
     }()
     
