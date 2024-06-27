@@ -83,7 +83,7 @@ class FCFakePopView: UIView {
             make.left.equalTo(self).offset(27.5.px())
             make.size.equalTo(CGSizeMake(31.px(), 33.px()))
             if Device.current.isPad {
-                make.top.equalToSuperview().offset(61.px())
+                make.top.equalToSuperview().offset(51.px())
             }else {
                 make.top.equalToSuperview().offset(121.px())
             }
